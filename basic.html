@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+</head>
+<body style="display:flex; justify-content:center; min-height:100vh; margin:0px; align-items:center;">
+<main style="border:1px solid black; width:90%; max-width:600px; padding:15px; border-radius:5px; background-color: azure;">
+    <h1 style="text-align: center;">Student Registration Form</h1>
+    <h2 style="text-align: center;">(Please fill your details below)</h2>
+<form>
+<table cellspacing="8px">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="txt_name" value="" size="25" placeholder="Enter your name" required/></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="psw" value="" maxlength="20" placeholder="Enter valid password" required/></td> 
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<label>Male
+<input type="radio" name="gender" value="M"/></label>
+<label>Female
+<input type="radio" name="gender" value="F" checked/></label>
+</td>
+</tr>
+<tr>
+    <td>DOB:</td>
+    <td><input type="date" name="dob" required/></td>
+</tr>
+<tr>
+<td>Subject:</td>
+<td>
+KAN<input type="checkbox" name="subject[]" value="KAN"/>
+MATH<input type="checkbox" name="subject[]" value="MATH"/>
+ENG<input type="checkbox" name="subject[]" value="ENG"/>
+SCI<input type="checkbox" name="subject[]" value="SCI"/>
+BIO<input type="checkbox" name="subject[]" value="BIO"/>
+GEO<input type="checkbox" name="subject[]" value="GEO"/>
+</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>
+<textarea cols="30" rows="5"></textarea>
+</td>
+</tr>
+<tr>
+    <td>Upload</td>
+    <td><input type="file" name="uploadfile"/></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" value="SUBMIT"/>
+<input type="reset" value="RESET"/>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
